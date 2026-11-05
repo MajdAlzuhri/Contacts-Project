@@ -1,86 +1,91 @@
-\# Contacts Management Application 📇
+# Contacts Management System 📇
+
+A Windows Forms desktop application built with C# and SQL Server to manage contact information.
+
+This project is part of my learning journey through the **Programming Advices roadmap by Dr. Mohammed Abu-Hadhoud**, where I practiced connecting C# applications with databases using ADO.NET.
+
+## 🚀 About the Project
+
+The Contacts Management System allows users to manage contact records through a simple desktop interface.
+
+While building this project, I focused on understanding how different application layers work together and how data is transferred between a C# application and SQL Server.
+
+The project follows **3-Tier Architecture** to keep the code organized and separate responsibilities.
+
+<img width="1362" height="752" alt="Main Screen" src="https://github.com/user-attachments/assets/89bb0135-4516-466d-bf08-e195e2fcb28d" />
+<img width="1362" height="761" alt="Add Screen" src="https://github.com/user-attachments/assets/8eae99ac-8bc6-425a-918b-22c485c84230" />
 
 
 
-A robust desktop application built for managing contacts efficiently, developed as part of my journey mastering C# and database connectivity through the Programming Advices roadmap.
+## 🛠️ Technologies Used
 
+- **Language:** C#
+- **Framework:** .NET Framework
+- **UI:** Windows Forms (WinForms)
+- **Database:** Microsoft SQL Server
+- **Data Access:** ADO.NET
+- **Architecture:** 3-Tier Architecture
 
+## ✨ Features
 
-\---
+- **Add Contacts:** Create new contact records.
+- **View Contacts:** Display and search for contact information.
+- **Update Contacts:** Edit existing contact details.
+- **Delete Contacts:** Remove contact records.
+- **Data Filtering & Sorting:** Work with DataTable, DataView, and DataSet.
+- **Database Operations:** Execute SQL commands using ADO.NET.
+- **SQL Injection Protection:** Use Parameterized Queries to handle user input safely.
+- **Input Validation:** Validate data before performing database operations.
 
+## 🏗️ Project Architecture
 
+The application is divided into three main layers:
 
-\## 🚀 About the Project
+**1. Presentation Layer (PL)**
 
-This project is a multi-tier Windows Forms desktop application designed to handle contact records seamlessly\[cite: 6]. It bridges the gap between local application logic and a relational SQL Server database using \*\*ADO.NET\*\*, implementing clean and professional software engineering principles.
+Handles the Windows Forms interface and user interactions.
 
+**2. Business Logic Layer (BLL)**
 
+Contains the application logic and manages communication between the presentation and data access layers.
 
-\---
+**3. Data Access Layer (DAL)**
 
+Handles communication with SQL Server and performs database operations using ADO.NET.
 
+This separation makes the code easier to understand, maintain, and extend.
 
-\## 🛠️ Built With
-
-\* \*\*Language:\*\* C# (.NET Framework)\[cite: 6]
-
-\* \*\*UI Framework:\*\* Windows Forms (WinForms)\[cite: 6]
-
-\* \*\*Data Access Layer:\*\* ADO.NET (`SqlConnection`, `SqlCommand`, `SqlDataAdapter`, `DataSet`, `DataTable`)\[cite: 6]
-
-\* \*\*Database:\*\* Microsoft SQL Server\[cite: 6]
-
-\* \*\*Architecture:\*\* 3-Tier Architecture\[cite: 6]
-
-
-
-\---
-
-
-
-\## 📐 Architecture \& Design
-
-The project strictly follows the \*\*3-Tier Architecture\*\* pattern to ensure separation of concerns, maintainability, and scalability:
-
-1\. \*\*Presentation Layer (PL):\*\* Windows Forms interface handling user interaction, form navigation, and input validation\[cite: 6].
-
-2\. \*\*Business Logic Layer (BLL):\*\* Manages the application rules, entity validations, and data processing logic\[cite: 6].
-
-3\. \*\*Data Access Layer (DAL):\*\* Direct communication with the SQL Server database, executing secure CRUD operations and queries\[cite: 6].
-
-
-
-\---
-
-
-
-\## ✨ Features
-
-\* \*\*Full CRUD Operations:\*\* Add, view, update, and delete contact records efficiently.
-
-\* \*\*Data Management:\*\* Utilizes `DataTable`, `DataView`, and `DataSet` for local data filtering, sorting, and manipulation\[cite: 6].
-
-\* \*\*Security \& Best Practices:\*\* Implements \*\*Parameterized Queries\*\* to protect against SQL Injection\[cite: 6].
-
-\* \*\*Robust Error Handling:\*\* Structured exception handling and data integrity validation across layers\[cite: 6].
-
-
-
-\---
-
-
-
-\## 📂 Project Structure
+## 📂 Project Structure
 
 ```text
-
 Contacts/
-
 │
+├── ContactsDataAccessLayer/
+│
+├── ContactsBusinessLayer/
+│
+└── ContactsPresentationLayer/
+```
 
-├── ContactsDataAccessLayer/   # Database connection and SQL execution
+## 🎯 What I Learned
 
-├── ContactsBusinessLayer/     # Business rules and entity logic
+Through this project, I gained practical experience with:
 
-└── ContactsPresentationLayer/ # Windows Forms UI and user interactions
+- Connecting C# applications to SQL Server using ADO.NET.
+- Performing CRUD operations.
+- Working with DataTable, DataView, DataSet, and DataAdapter.
+- Using Parameterized Queries to prevent SQL Injection.
+- Understanding the responsibilities of each layer in 3-Tier Architecture.
+- Organizing code and separating application responsibilities.
 
+## 📚 Learning Source
+
+This project was developed as part of:
+
+**Programming Advices Roadmap — Course 18: C# & Database Connectivity (ADO.NET)**
+
+Instructor: Dr. Mohammed Abu-Hadhoud
+
+---
+
+*This project represents another step in my journey toward becoming a Software Engineer, and a practical application of what I have learned so far.* 🚀
